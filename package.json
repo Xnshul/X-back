@@ -1,0 +1,21 @@
+{
+  "name": "Twitterserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/index",
+    "build": "tsc -p .",
+    "dev": "tsc-watch --onSuccess \"npm run build && npm start\"",
+    "watch": "tsc-watch --onSuccess \"npm run build\""
+  },
+  "devDependencies": {
+    "tsc-watch": "6.0.4",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.2",
+    "express": "^4.21.2",
+    "git": "^0.1.5"
+  }
+}
