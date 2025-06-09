@@ -1,6 +1,6 @@
 import express = require("express");
 import { ApolloServer } from "@apollo/server";
-import { expressMiddleware } from "@apollo/server/express4";
+import { expressMiddleware } from '@as-integrations/express4';
 import bodyParser from "body-parser";
 import { printSchema } from "graphql";
 import { PrismaClient } from "@prisma/client";
