@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import express, { query } from "express";
 import { ApolloServer } from "@apollo/server";
 import { expressMiddleware } from "@apollo/server/express4";
@@ -20,3 +21,15 @@ export async function initServer() {
  app.use("/graphql", expressMiddleware(graphqlServer));
  return app;
 }
+=======
+import express = require("express");
+import { ApolloServer } from "@apollo/server";
+import { expressMiddleware } from "@apollo/server/express4";
+import * as bodyParser from "body-parser";
+import { printSchema } from "graphql";
+
+export async function initServer(){
+  const app = express();
+  app.use(bodyParser.json())
+}
+>>>>>>> d432332 (googleauth)
