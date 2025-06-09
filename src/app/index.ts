@@ -4,6 +4,7 @@ import { expressMiddleware } from "@apollo/server/express4";
 import bodyParser from "body-parser";
 import { printSchema } from "graphql";
 import { PrismaClient } from "@prisma/client";
+import { graphqlServer } from './path/to/graphqlServer';
 
 export async function initServer(){
   const app = express();
